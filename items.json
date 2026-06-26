@@ -1,0 +1,288 @@
+[
+{
+    "model": "myapp.item",
+    "pk": 1,
+    "fields": {
+        "user_name": 1,
+        "item_name": "POSTGRES githeri",
+        "item_desc": "it's nice",
+        "item_price": "20.00",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:39:15.791Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 2,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Postgress nyama choma",
+        "item_desc": "crispy",
+        "item_price": "200.00",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:42:09.472Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 3,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Margherita Pizza",
+        "item_desc": "Classic Italian pizza with mozzarella and tomato",
+        "item_price": "8.99",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.083Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 4,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Cheeseburger",
+        "item_desc": "Beef patty with cheese, lettuce and tomato",
+        "item_price": "6.49",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.097Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 5,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Caesar Salad",
+        "item_desc": "Crisp romaine with parmesan and croutons",
+        "item_price": "5.99",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.103Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 6,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Chicken Tacos",
+        "item_desc": "Soft tortillas with grilled chicken and salsa",
+        "item_price": "7.29",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.109Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 7,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Sushi Platter",
+        "item_desc": "Assorted rolls with tuna, salmon and avocado",
+        "item_price": "12.99",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.117Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 8,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Pasta Alfredo",
+        "item_desc": "Creamy white sauce pasta with mushrooms",
+        "item_price": "9.49",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.124Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 9,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Falafel Wrap",
+        "item_desc": "Middle Eastern wrap with chickpea patties",
+        "item_price": "6.99",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.134Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 10,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Pad Thai",
+        "item_desc": "Thai stir-fried noodles with peanuts and veggies",
+        "item_price": "10.49",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.143Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 11,
+    "fields": {
+        "user_name": 1,
+        "item_name": "French Fries",
+        "item_desc": "Crispy golden potato fries with salt",
+        "item_price": "3.49",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.149Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 12,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Veggie Burger",
+        "item_desc": "Plant-based patty with lettuce and tomato",
+        "item_price": "6.29",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.155Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 13,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Butter Chicken",
+        "item_desc": "Indian-style chicken in creamy tomato sauce",
+        "item_price": "11.49",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.164Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 14,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Ramen Bowl",
+        "item_desc": "Japanese noodle soup with egg and pork",
+        "item_price": "10.99",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.172Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 15,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Greek Salad",
+        "item_desc": "Feta cheese, olives, cucumber and tomatoes",
+        "item_price": "7.99",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.182Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 16,
+    "fields": {
+        "user_name": 1,
+        "item_name": "BBQ Ribs",
+        "item_desc": "Slow cooked pork ribs with barbecue sauce",
+        "item_price": "14.99",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.188Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 17,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Shawarma",
+        "item_desc": "Grilled meat wrap with garlic sauce",
+        "item_price": "8.49",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.196Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 18,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Pancakes",
+        "item_desc": "Stack of fluffy pancakes with maple syrup",
+        "item_price": "5.79",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.204Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 19,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Mutton Biryani",
+        "item_desc": "Fragrant rice with spiced mutton",
+        "item_price": "12.29",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.212Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 20,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Spring Rolls",
+        "item_desc": "Crispy rolls stuffed with vegetables",
+        "item_price": "4.99",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.219Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 21,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Fish and Chips",
+        "item_desc": "British-style fried fish with fries",
+        "item_price": "9.99",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.228Z"
+    }
+},
+{
+    "model": "myapp.item",
+    "pk": 22,
+    "fields": {
+        "user_name": 1,
+        "item_name": "Ice Cream Sundae",
+        "item_desc": "Vanilla ice cream topped with chocolate sauce",
+        "item_price": "4.59",
+        "item_image": "https://img.magnific.com/premium-psd/pizza-slices-burgers-floating-isolated-transparent-background-rounded-by-spices-food_1232930-3777.jpg?semt=ais_hybrid&w=740&q=80",
+        "is_available": true,
+        "create_at": "2026-06-26T11:53:49.236Z"
+    }
+}
+]
