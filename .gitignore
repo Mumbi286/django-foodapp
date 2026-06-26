@@ -1,0 +1,42 @@
+# ---- Secrets / environment ----
+.env
+.env.*
+!.env.example
+
+# ---- Django ----
+*.log
+db.sqlite3
+db.sqlite3-journal
+
+# ---- User-uploaded media (MEDIA_ROOT) ----
+/pictures/
+/profile_pictures/
+
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ---- Virtual environments ----
+venv/
+.venv/
+env/
+ENV/
+
+# ---- Static files collected for production ----
+/staticfiles/
+/static_root/
+
+# ---- IDE / editor ----
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# ---- Testing / coverage ----
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
