@@ -1,6 +1,8 @@
 {% extends 'myapp/base.html' %} {% block body%}
+{% load cache %}
 <div>
-  {%for item in item_list %}
+  {% cache 900 page_obj %}
+  {%for item in page_obj %}
   <div class="m-10 flex w-1/2 mx-auto">
     <div>
       <img class="w-64 rounded-lg" src="{{item.item_image}}" alt="" />
@@ -20,6 +22,17 @@
     </div>
   </div>
   {%endfor%}
+  {% endcache %}
+</div>
+<!-- Pagination Menu -->
+<div class="flex items-center justify-center space-x-4 py-4">
+  {% if page_obj.has_previous %}
+  <a href="?page={{page_obj.previous_page_number}}" class="px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 transition">Previous</a>
+  {% endif %}
+  <span>Page {{page_obj.number}} of {{page_obj.paginator.num_pages}}</span>
+  {% if page_obj.has_next %}
+  <a href="?page={{page_obj.next_page_number}}" class="px-4 py-2 rounded-lg bg-gray-200 text-gray-700 hover:bg-gray-300 transition">Next</a>
+  {% endif %}
 </div>
 
 {%endblock%}

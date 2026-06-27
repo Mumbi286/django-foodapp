@@ -7,20 +7,32 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
+from django.core.paginator import Paginator
+from django.views.decorators.cache import cache_page
+from django.views.decorators.vary import vary_on_headers
 
 
 # Creating function based views here.(listview)
 
 # @login_required
-# def index(request):
-#     # Getting items from the database
-#     item_list = Item.objects.all()
-#     # Creating context
-#     context = {
-#         'item_list' : item_list
-#     }
-#     # Passing the context object to the render method along with the template
-#     return render(request,"myapp/index.html",context)
+# @cache_page(60 * 15) # implementing caching
+# @vary_on_headers("User-Agent") #caching by headers
+def index(request):
+    # Getting items from the database
+    item_list = Item.objects.all()
+
+    # pagination 
+    paginator = Paginator(item_list,5)
+    page_number = request.GET.get("page")
+    page_obj = paginator.get_page(page_number)
+
+
+    # Creating context
+    context = {
+        'page_obj' : page_obj
+    }
+    # Passing the context object to the render method along with the template
+    return render(request,"myapp/index.html",context)
 
 # class based view (listview) - Gets all items from the model
 class IndexClassView(ListView):
