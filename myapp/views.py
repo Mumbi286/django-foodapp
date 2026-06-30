@@ -10,16 +10,27 @@ from django.urls import reverse_lazy
 from django.core.paginator import Paginator
 from django.views.decorators.cache import cache_page
 from django.views.decorators.vary import vary_on_headers
+import logging # built-in Python library for tracking system events and errors
+from django.shortcuts import get_object_or_404 #Django helper to fetch data or auto-trigger a 404 
+from django.utils import timezone
+
+
+
+
+#  creating a logger instance after the current file for targeted debugging
+logger = logging.getLogger(__name__)
 
 
 # Creating function based views here.(listview)
-
 # @login_required
 # @cache_page(60 * 15) # implementing caching
 # @vary_on_headers("User-Agent") #caching by headers
 def index(request):
     # Getting items from the database
+    logger.info("Fetching all items from the database")
+    logger.info(f"User : {request.user} , time:[{timezone.now().isoformat()}] requested item list from {request.META.get('REMOTE_ADDR')}")
     item_list = Item.objects.all()
+    logger.debug(f"Found {item_list.count()} items")
 
     # pagination 
     paginator = Paginator(item_list,5)
@@ -40,20 +51,31 @@ class IndexClassView(ListView):
     template_name = "myapp/index.html"
     context_object_name = 'item_list'
 
-# # Function based view
-# def detail(request,id):
-#     item = Item.objects.get(id=id)
-#     context ={
-#         'item' : item
-#     }
-#     return render(request,'myapp/detail.html',context)
+# Function based view
+def detail(request,id):
+    logger.info(f"Fetching an item with id:{id}")
+    try:
+        # trying to find the item by ID, or trigger a 404 error if missing
+        item = get_object_or_404(Item,pk=id)
+        # Log the item details for developer troubleshooting
+        logger.debug(f"Item found {item.item_name} (${item.item_price})")
+    except Exception as e:
+        # Record the specific error and the target ID in the system logs
+        logger.error("Error fetching the item with id %s: %s", id,e)
+        # Forward the 404 or 500 error so Django can show the correct error
+        raise
 
-# class based detail view - When you want to render one item from the database
-# Then in the url.py I have changed from id to pk(primary key)
-class FoodDetail(DetailView):
-    model = Item 
-    template_name = 'myapp/detail.html'
-    context_object_name = 'item'
+    context ={
+        'item' : item
+    }
+    return render(request,'myapp/detail.html',context)
+
+# # class based detail view - When you want to render one item from the database
+# # Then in the url.py I have changed from id to pk(primary key)
+# class FoodDetail(DetailView):
+#     model = Item 
+#     template_name = 'myapp/detail.html'
+#     context_object_name = 'item'
 
 
 # Creating form
