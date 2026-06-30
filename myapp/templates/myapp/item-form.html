@@ -4,6 +4,8 @@
 <!--  -->
 <div class="flex flex-col justify-center items-center min-h-screen p-10">
   <h1 class="font-bold text-2xl">Add Item</h1>
+  {{form.errors}}
+
   <form method="POST" class="shadow-lg space-y-6 p-10 w-96">
     <!--  -->
     {% csrf_token%}
@@ -22,6 +24,13 @@
     <div>
       <label for="">{{field.label}}</label>
       <div class="border rounded p-2">{{field}}</div>
+
+      <!-- Show validation errors for this field (e.g. "Price cannot be negative!") after the form is submitted -->
+      {% if field.errors %}
+      <!-- striptags removes Django's default <ul><li> markup so we get plain red text -->
+
+      <p class="text-red-500 text-sm mt-1">{{ field.errors|striptags }}</p>
+      {% endif %}
     </div>
     {% endfor %}
     <button class="bg-blue-500 text-white px-4 py-2 w-full">Add Item</button>
