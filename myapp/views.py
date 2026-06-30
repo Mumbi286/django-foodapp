@@ -96,8 +96,8 @@ def create_item(request):
 # class based item create view 
 class ItemCreateView(CreateView):
     # item_form.html
-    model = Item 
-    fields = ['item_name','item_desc','item_price','item_image']
+    model = Item
+    form_class = ItemForm
     def form_valid(self,form):
        form.instance.user_name = self.request.user
        return super().form_valid(form)
